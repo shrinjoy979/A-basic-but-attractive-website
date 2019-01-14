@@ -4,9 +4,22 @@
 	<title>WEB DEVELOPER</title>
 	<link rel="stylesheet" href="style.css">
 	<link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Slabo+27px" rel="stylesheet">
 </head>
 <body>
 	
+	<!--------------------------------- popUp ------------------------------->
+
+	<div id="popupmain" style="display: none;">
+		<div id="popup">
+			<h1 id="newsHeading">Subcribe to owr channel</h1>
+			<input id="emailId" type="text" placeholder="user@email.com"><br>
+			<button class="submitId">Subscribe</button>
+			<button class="submitId">No Thanks</button>
+		</div>
+	</div>
+	
+	<!-------------------------------- Header ------------------------------->
 	<div class="outer">
 		<div class="banner">
 			<img src="logo.png" alt="logo" class ="logo">
@@ -42,5 +55,22 @@
 	<footer style="background-color: black; height: 100px; width: 100%;">
 		<h4 style="color: white; text-align: center; padding-top: 40px; font-size: 18px;">@ Copyright Shrinjoy Saha</h4>
 	</footer>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+	<script type="text/javascript">
+		
+
+			$(document).ready(function(){
+				setTimeout(function(){
+					$('#popupmain').css('display','block');
+				}, 5000);
+			});
+
+			$('.submitId').click(function(){
+				$('#popupmain').css('display','none');
+			});
+			
+	</script>
 </body>
 </html>
