@@ -42,6 +42,49 @@
 	color: orange;
 	border-bottom: 1px solid orange;
 }
+
+/***************************** popUp *********************************/
+
+#popupmain{
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,0.7);
+	z-index: 1001;
+}
+#popup{
+	width: 500px;
+	height: 250px;
+	background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)) , url(popup.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	box-shadow: 2px 2px 5px 3px white;
+	text-align: center;
+}
+#newsHeading{
+	transform: translateY(50px);
+	color: white;
+	font-family: 'Slabo 27px', serif;
+}
+#emailId{
+	width: 60%;
+	padding: 5px;
+	margin-top: 80px;
+	margin-bottom: 20px;
+	font-family: 'Slabo 27px', serif;
+}
+.submitId{
+	background-color: #0fc0fa;
+	border: none;
+	font-size: 1rem;
+	padding: 0.6rem 1rem;
+	color: white;
+	font-family: 'Slabo 27px', serif;
+}
 .content{
 	position: absolute;
 	top: 50%;
